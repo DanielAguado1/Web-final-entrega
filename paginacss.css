@@ -1,0 +1,451 @@
+/*pagina de inicio y foto fijada para toda la web*/
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(foto-inicio.jpg);
+    background-attachment: fixed;
+    background-size:100vw 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+header{ 
+    padding: 0;
+    margin: 0;
+    
+    
+}
+/*Aqui empieza el menu que se deslizara por toda la web*/
+nav ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: larger;
+}
+/* el z index y la posicion es para que cuando deslices el menu te siga*/
+.barra-inicio{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color:rgb(234 , 224, 200,0.9);
+}
+.barra-inicio:hover{
+    background-color: #f4eee0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 100px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:  #332217;
+}
+nav ul li a:hover{
+    color: red;
+    
+}
+/* Aqui termina el menu y pasamos a la primera pagina */
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5f432f;
+    background-color:rgb(234 , 224, 200,0.9);
+    height: 40%;
+    width: 40%;
+    padding: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-radius: 18px;
+
+}
+/* se divide esta pagina en un titulo y una card con sus correspondientes formatos */
+.titulo{
+    width: 62%;
+    font-size: larger;
+    
+}
+
+
+.pagina-1{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    align-self: center;
+    
+}
+/* Comienzo dela pagina 2 que contiene tres cards un titulo y una transicion en el hover */
+.pagina-2{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(199,166,112);
+    color: #5f432f;
+    text-align:center;
+    padding-top: 10%;
+    font-size: larger
+
+}
+.content-pag2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #f4eee0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4eee0;
+    background-color: transparent;
+    width: 25%;
+    height: 40%;
+    justify-content: space-between;
+    opacity: 85%;
+    font-size: large;
+    background-color: #ae7c48;
+    border-radius: 5%;
+    margin-bottom: 300px;
+}
+.card:hover{
+    width: 35%;
+    background-color: #c7a670;
+    color: #5f432f;
+    transition: 1s;
+}
+/* Final pagina 2 y comienzo de la 3 donde tenemos un titulo y una card grande que contiene dos cards en su interio,
+cada una tiene su formato y suele haber un div de mas para poder centrar el titulo */
+.pagina-3{
+    margin: 0;
+    padding-top: 8%;
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(216,196,153,0.5);
+    text-align: center;
+    font-size: larger;
+    color: #5f432f;
+}
+.content-pag3{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:85%;
+}
+
+.card-casos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: #ae7c48;
+    border-radius: 10px;
+    color: #332217;
+}
+.card-caso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.img-casos{
+    margin-top: 20px;
+    width: 30%;
+    height: 30%; 
+}
+/* Comienzo de pagina 4 que contieene una serie de textos y logos  */
+.pagina-4{
+    margin: 0;
+    padding-top: 8%;
+    width: 100%;
+    height: 100vh;
+    background-color: #5f432f;
+    text-align: center;
+    color:#f4eee0; 
+
+}
+.pagina4-titulo{
+    width: 100%;
+    height:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-pag4{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+.card-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    border-radius: 10px;
+}
+/* Pagina 5 que contiene el formulario que tiene una serie de divs para poder hacer la estructura  que tiene */
+.pagina-5{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 4%;
+    color: #5f432f;
+    background-color:  rgb(216,196,153,0.5);
+}
+.content-pag5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%
+    
+}
+.Formulario{
+    padding: 40px;
+    border-radius: 8px;
+    height: 80%;
+    width: 60%;
+    background-color: rgba(199, 138, 72, 0.9);
+    margin-top: 50px;
+
+}
+
+#edad{
+    width: 30px;
+    height: 30px;
+}
+#nombre{
+    height: 30px;
+}
+#telefono{
+    height: 30px;
+}
+#email{
+    height: 30px;
+}
+
+.form{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #332217;
+    margin-bottom: 10px;
+    height: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form1{ 
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #332217;
+    margin-bottom: 10px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form2{ 
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #332217;
+    margin-bottom: 10px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.form3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    row-gap: 20px;
+}
+.part-form{
+    width: 30%;
+    height: 300px;
+    
+}
+.btn{
+    background-color:#5f432f;
+    color:#c7a670;
+    height: 35px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.btn:hover{
+    background-color: #c7a670;
+    color: #332217;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+/* Comienzo del footer que contiene una serie de logos e informacion y enlaces  */
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #332217;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #c7a670;
+    
+
+}
+.titulo-contacto{
+    padding-top: 1%;
+    
+
+}
+.contacto{
+    padding-left: 1%;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-left:5% ;
+    
+    
+}
+.img-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.img-footer{
+    height: 10%;
+    
+}
+.privacidad{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+}
+.ubicacion{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ubicacion h5 a{
+    text-decoration: none;
+    color: #c7a670;
+    
+}
+.button{
+    width: 10%;
+}
+.pagos{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* Esta seccion hace referencia a los ajustes para pantallas pot debajo de 1000px 
+y los ajustes son meter gaps,cambiar tamaño de letra y modificar widths */
+@media only screen and (max-width: 1000px) {
+   
+    .inicio{
+        height: 100%;
+        width: 50%;
+    }
+  .pagina4-titulo{
+    font-size: 8px;
+    
+  }
+  .formulario-content{
+    gap: 30%;
+  }
+  .card-casos{
+    width: 100%;
+  }
+ .content-pag4{
+    width: 100%;
+ }
+
+   
+}
+ @media only screen and (max-width: 1300px){
+    .barra-inicio{
+        font-size: 12px;
+        height: 10%;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        height: 100%;
+        width: 20%;
+    }
+        .inicio {
+            height: 100%;
+            width: 50%;
+        }
+    }
